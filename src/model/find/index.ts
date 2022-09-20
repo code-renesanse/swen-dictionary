@@ -1,7 +1,6 @@
 import { errorLog } from "swen-logger";
 import API from "swen-types/api";
-import validateAPI from "swen-validator/dist/api";
-import { validateComponentDicitonary } from "../validation";
+import { validateAPI } from "swen-validator";import { validateComponentDicitonary } from "../validation";
 
 /**
  * 

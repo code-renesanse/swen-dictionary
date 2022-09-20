@@ -1,6 +1,5 @@
 import API from "swen-types/api";
-import validateAPI from "swen-validator/dist/api";
-
+import { validateAPI } from "swen-validator";
 /**
  * 
  * @param {String | Object} elementRef - element key | object 

@@ -1,8 +1,6 @@
 import { errorLog } from "swen-logger";
 import API from "swen-types/api";
-import validateAPI from "swen-validator/dist/api";
-import validateObject from "swen-validator/dist/object";
-import validateString from "swen-validator/dist/string";
+import { validateAPI, validateObject, validateString } from "swen-validator";
 import { elementExists } from "../elementExists";
 
 /**

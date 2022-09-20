@@ -2,7 +2,7 @@ import { developmentLog } from "swen-logger";
 import API from "swen-types/api";
 import Dictionary from "swen-types/dictionary";
 import ModelElement from "swen-types/element";
-import validateAPI from "swen-validator/dist/api";
+import { validateAPI } from "swen-validator";
 
 /**
  * Builds a dictioanry of all blend components so that then can be referenced later

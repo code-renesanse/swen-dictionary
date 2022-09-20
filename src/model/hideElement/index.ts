@@ -1,6 +1,5 @@
 import API from "swen-types/api";
-import validateAPI from "swen-validator/dist/api";
-import { elementExists } from "../elementExists";
+import { validateAPI } from "swen-validator";import { elementExists } from "../elementExists";
 import { getElementID } from "../getters";
 
 /**

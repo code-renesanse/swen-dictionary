@@ -1,7 +1,7 @@
 import API from "swen-types/api";
-import { validateModelElement } from "swen-validator";
-import validateAPI from "swen-validator/dist/api";
+import { validateAPI } from "swen-validator";
 import { getElementID } from "../getters";
+import { validateModelElement } from "../validation";
 
 /**
  * 

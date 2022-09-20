@@ -1,6 +1,6 @@
 {
   "name": "swen-dictionary",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,11 +10,11 @@
   "author": "code.renesanse",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.3",
+    "swen-types": "^1.0.2"
   },
   "dependencies": {
-    "swen-logger": "^0.0.3",
-    "swen-types": "^1.0.0",
-    "swen-validator": "^0.0.6"
+    "swen-logger": "^0.0.4",
+    "swen-validator": "^0.1.0"
   }
 }

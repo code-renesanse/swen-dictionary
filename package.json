@@ -1,0 +1,20 @@
+{
+  "name": "swen-dictionary",
+  "version": "0.0.3",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "code.renesanse",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "swen-logger": "^0.0.3",
+    "swen-types": "^1.0.0",
+    "swen-validator": "^0.0.6"
+  }
+}

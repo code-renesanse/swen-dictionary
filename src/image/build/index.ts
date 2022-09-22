@@ -1,4 +1,4 @@
-import Dictionary from "swen-types/dictionary";
+import { Dictionary } from "swen-types/dictionary";
 
 /**
  * Returns an object holding imported imaga data

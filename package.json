@@ -1,20 +1,33 @@
 {
   "name": "swen-dictionary",
   "version": "0.1.0",
-  "description": "",
-  "main": "./dist/index.js",
-  "scripts": {
-    "build": "tsc"
-  },
-  "keywords": [],
+  "description": "Library used for model and image dictionary manipulation.",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "author": "code.renesanse",
   "license": "MIT",
+  "keywords": [
+    "ts",
+    "swen",
+    "core"
+  ],
+  "scripts": {
+    "build": "tsc && cp ./package.json ./dist/package.json"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "devDependencies": {
     "typescript": "^4.8.3",
-    "swen-types": "^1.0.2"
+    "swen-types": "^1.0.21"
   },
   "dependencies": {
-    "swen-logger": "^0.0.4",
+    "swen-logger": "^0.0.5",
     "swen-validator": "^0.1.0"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-renesanse/swen-dictionary"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "swen-dictionary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library used for model and image dictionary manipulation.",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -25,7 +25,6 @@
     "swen-logger": "^0.0.5",
     "swen-validator": "^0.1.0"
   },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/code-renesanse/swen-dictionary"

@@ -1,5 +1,5 @@
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";import { elementExists } from "../elementExists";
+import { API } from "swen-types/api";
+import { elementExists } from "../elementExists";
 import { hideElement } from "../hideElement";
 
 /**
@@ -10,7 +10,7 @@ import { hideElement } from "../hideElement";
 // TODO: Element list type
 // TODO: move this functionlaity to hideElement
 export function hideElementList(elementList: any, api: API) {
-    if(!validateAPI(api)) return;
+    // if(!validateAPI(api)) return;
 
     elementList = elementList.filter((e: any) => e != '');
 

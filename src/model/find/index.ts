@@ -1,6 +1,6 @@
 import { errorLog } from "swen-logger";
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";import { validateComponentDicitonary } from "../validation";
+import { API } from "swen-types/api";
+import { validateComponentDicitonary } from "../validation";
 
 /**
  * 
@@ -10,8 +10,8 @@ import { validateAPI } from "swen-validator";import { validateComponentDicitonar
  */
 // TODO: look into having a Sketchfab API type
 export function find(key: string, api: API) {
-    if(!validateAPI(api)) return;
-    if(!validateComponentDicitonary(api)) return;
+    // if(!validateAPI(api)) return;
+    // if(!validateComponentDicitonary(api)) return;
     
     for (let elementId in api.componentDictionary) {
         if(elementId.includes(key)) return api.componentDictionary[elementId];

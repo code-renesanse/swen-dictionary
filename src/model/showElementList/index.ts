@@ -1,5 +1,5 @@
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";import { elementExists } from "../elementExists";
+import { API } from "swen-types/api";
+import { elementExists } from "../elementExists";
 import { showElement } from "../showElement";
 
 /**
@@ -10,7 +10,7 @@ import { showElement } from "../showElement";
 // TODO: Element list type
 // TODO: move this functionality into showElement
 export function showElementList(elementList: any, api: API) {
-    if(!validateAPI(api)) return;
+//    if(!validateAPI(api)) return;
 
     elementList = elementList.filter((e: any) => e != '');
 

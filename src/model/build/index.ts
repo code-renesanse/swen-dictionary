@@ -1,8 +1,7 @@
 import { developmentLog } from "swen-logger";
-import API from "swen-types/api";
-import Dictionary from "swen-types/dictionary";
-import ModelElement from "swen-types/element";
-import { validateAPI } from "swen-validator";
+import { API } from "swen-types/api";
+import { Dictionary } from "swen-types/dictionary";
+import { ModelElement } from "swen-types/element";
 
 /**
  * Builds a dictioanry of all blend components so that then can be referenced later
@@ -12,7 +11,7 @@ import { validateAPI } from "swen-validator";
  */
 export async function buildComponentDictionary(graph: any, api: API) {
     return new Promise((resolve) => {
-        if(!validateAPI(api)) return;
+        // if(!validateAPI(api)) return;
 
         developmentLog('Started building model element dicitironary.');
         let dictioanry: Dictionary<ModelElement> = {};

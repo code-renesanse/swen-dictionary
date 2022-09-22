@@ -1,5 +1,5 @@
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";
+import { API } from "swen-types/api";
+
 /**
  * 
  * @param {string} key -  key for search  
@@ -7,7 +7,7 @@ import { validateAPI } from "swen-validator";
  * @returns all elements that satisfy the key given 
  */
 export function findAll(key: string, api: API) {
-    if(!validateAPI(api)) return;
+    // if(!validateAPI(api)) return;
 
     let out = [];
     for (let elementId in api.componentDictionary) {

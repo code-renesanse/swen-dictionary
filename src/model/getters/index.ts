@@ -1,5 +1,5 @@
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";
+import { API } from "swen-types/api";
+
 /**
  * 
  * @param {String | Object} elementRef - element key | object 
@@ -8,7 +8,7 @@ import { validateAPI } from "swen-validator";
  */
 // TODO: Element reference type
 export function getElementID(elementRef: {name: string} | string, api: API): string {
-    if(!validateAPI(api)) return '';
+    // if(!validateAPI(api)) return '';
 
     if(typeof elementRef === 'object') {
         return api.componentDictionary[elementRef.name].instanceID;

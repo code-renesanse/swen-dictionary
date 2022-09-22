@@ -1,6 +1,6 @@
 import { errorLog } from "swen-logger";
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";
+import { API } from "swen-types/api";
+
 /**
  * 
  * @param {Object||String} elementReference - reference to the element 
@@ -8,7 +8,7 @@ import { validateAPI } from "swen-validator";
  * @returns boolean, wether the element exists inside the component dictionary
  */
 export function elementExists(elementReference: { name: string } | string, api: API) {
-    if(!validateAPI(api)) return;
+    // if(!validateAPI(api)) return;
 
     if(typeof elementReference === 'object'){
         if (api.componentDictionary[elementReference.name] == null || api.componentDictionary[elementReference.name] == undefined) {

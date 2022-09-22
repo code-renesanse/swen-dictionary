@@ -1,5 +1,4 @@
-import API from "swen-types/api";
-import { validateAPI } from "swen-validator";
+import { API } from "swen-types/api";
 import { getElementID } from "../getters";
 import { validateModelElement } from "../validation";
 
@@ -11,8 +10,8 @@ import { validateModelElement } from "../validation";
  */
 // TODO: Element reference type
 export function showElement(elementReference: any, api: API) {
-    if(!validateAPI(api)) return;
-    if(!validateModelElement(elementReference, api)) return;
+//    if(!validateAPI(api)) return;
+    // if(!validateModelElement(elementReference, api)) return;
     
     api.show(getElementID(elementReference, api));
     return true;

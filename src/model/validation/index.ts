@@ -1,6 +1,5 @@
 import { errorLog } from "swen-logger";
-import API from "swen-types/api";
-import { validateAPI, validateObject, validateString } from "swen-validator";
+import { API } from "swen-types/api";
 import { elementExists } from "../elementExists";
 
 /**
@@ -10,9 +9,9 @@ import { elementExists } from "../elementExists";
  * @returns true if the element reference is valid, false otherwise
  */
 // TODO: look into having a Sketchfab API type
-export function validateModelElement(elementRef: any, api: API) {
-    validateAPI(api);
-    typeof elementRef === 'string' ? validateString(elementRef) : validateObject(elementRef);
+export function validateModelElement(elementRef: { name: string } | string, api: API) {
+    // validateAPI(api);
+    // typeof elementRef === 'string' ? validateString(elementRef) : validateObject(elementRef);
     if(!elementExists(elementRef, api)) {
         errorLog(`Element with name ${elementRef} does not exist`);
         return false;
@@ -22,8 +21,8 @@ export function validateModelElement(elementRef: any, api: API) {
 
 // TODO: look into having a Sketchfab API type
 export function validateModelId(modelId: string, api: API) {
-    validateAPI(api);
-    validateString(modelId);
+    // validateAPI(api);
+    // validateString(modelId);
     if(api.modelsList.indexOf(modelId) === -1) {
         errorLog(`${modelId} is not a valid model identificator`);
         return false;
@@ -38,7 +37,7 @@ export function validateModelId(modelId: string, api: API) {
  */
 // TODO: look into having a Sketchfab API type
 export function validateComponentDicitonary(api: API) {
-    validateAPI(api);
+    // validateAPI(api);
     if(api.componentDictionary === null) {
         errorLog('Component dictionary is null');
         return false;
